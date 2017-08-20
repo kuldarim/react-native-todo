@@ -20,6 +20,9 @@ import {
   View
 } from 'react-native';
 
+import 
+  TodoListComponent  from './app/todo-list-component'
+
 export default class ToDo extends Component {
   render() {
     return (
@@ -31,19 +34,17 @@ export default class ToDo extends Component {
             </Button>
           </Left>
           <Body>
-            <Title>Header</Title>
+            <Title>Todo app</Title>
           </Body>
           <Right />
         </Header>
         <Content>
-          <Text>
-            This is Content Section
-          </Text>
+          <TodoListComponent></TodoListComponent>
         </Content>
         <Footer>
           <FooterTab>
             <Button full>
-              <Text>Footer</Text>
+              <Text>@kuldarim 2017</Text>
             </Button>
           </FooterTab>
         </Footer>
